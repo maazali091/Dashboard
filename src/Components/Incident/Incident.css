@@ -1,0 +1,30 @@
+.incident{
+    padding: 10px 40px;
+}
+.incident .title{
+    color: #1f1463;
+    position: relative;
+}
+.incident .title::before{
+    content: '';
+    width: 120px;
+    height: 2px;
+    background: #1f1463;
+    bottom: -15px;
+    position: absolute;
+    left: 0;
+}
+.incident .title::after{
+    content: '';
+    width: 60px;
+    background: #EC1B23;
+    height: 6px;
+    bottom: -17px;
+    position: absolute;
+    left: 0;
+}
+@media (max-width:449px){
+    .incident{
+        padding: 10px 20px;
+    }
+}

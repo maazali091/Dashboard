@@ -1,0 +1,12 @@
+.home{
+    flex-grow: 1;
+    background-image: url(../../assets/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+/* @media(max-width:799px){
+    .home{
+        width: 70% !important;
+    }
+} */

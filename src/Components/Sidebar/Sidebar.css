@@ -1,0 +1,155 @@
+.sidebar{
+    width: 260px;
+    background: linear-gradient(to bottom, #721A5E 10%, #2B1178 90%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    /* z-index: 2; */
+    transition: all 0.5s;
+}
+.sidebar.small-sidebar::before{
+    height: 200px !important;
+}
+.sidebar::before{
+    content: '';
+    position: absolute;
+    top: 98%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #291560;
+    z-index: -1;
+}
+.sidebar.small-sidebar{
+    width: 60px;
+}
+
+.sidebar.small-sidebar ul li a svg{
+    font-size: 25px !important;
+    font-weight: 900;
+}
+.sidebar.small-sidebar .logo{
+    margin-top: 50px;
+}
+.sidebar.small-sidebar ul li  span{
+    /* display: none; */
+}
+.sidebar.small-sidebar a span{
+    /* display: none; */
+}
+.sidebar .bars{
+    position: absolute;
+    top: 16px;
+    right: -16px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5C5C64;
+    cursor: pointer;
+    z-index: 99;
+    border-radius: 5px;
+    background: #F1F1F1;
+}
+.sidebar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 80%; */
+    margin: 20px 0;
+}
+.sidebar .logo img{
+    width: 80%;
+}
+.sidebar.small-sidebar nav ul{
+    width: 90%;
+}
+.sidebar nav ul{
+    width: 90%;
+}
+.sidebar li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    border-radius: 0 8px 8px 0;
+}
+.sidebar.small-sidebar ul li a{
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0 8px 8px 0;
+    font-weight: 400;
+    padding: 12px 30px;
+    transition: all 0.5s linear;
+    gap: 15px;
+    font-size: 18px;
+}
+.sidebar.small-sidebar ul li span{
+    display: none;
+}
+.sidebar ul li a svg{
+    font-size: 25px !important;
+    font-weight: 900;
+}
+.sidebar ul li:hover a,
+.sidebar ul li.active a{
+    background: #1B1464;
+    font-weight: 700;
+}
+.sidebar hr{
+    width: 110%;
+    margin-left: -10px !important;
+    margin: 15px 0;
+}
+.sidebar.small-sidebar .log-out span{
+    display: none;
+}
+.sidebar .log-out{
+    width: 90%;
+    background: #fff;
+    color: #EC1B23;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px ;
+    gap: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+}
+.sidebar .log-out svg{
+    font-size: 25px;
+}
+
+@media(max-width:849px){
+    .sidebar.small-sidebar{
+        flex-basis: 10% !important;
+    }
+    .sidebar{
+        flex-basis: 33% !important;
+    }    
+    .sidebar::before{
+        height: 400px;
+    }
+}
+@media(max-width:449px){
+    .sidebar{
+        /* flex-basis: 0% !important; */
+        display: none;
+    }
+}
